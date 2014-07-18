@@ -1,11 +1,15 @@
 #!/bin/bash
 # author: demontager
 # website: http://nixtalk.com
+################################                              
+#                              #
+#        VER. 1.0 beta         #
+################################
 
 # Supply www root folder
 WWW_ROOT="/var/www/somehost.com"
 
-# Adjust below ones, or keep unchanged it should suffice.
+# Adjust below vars, or keep unchanged it should suffice.
 HOSTAPD_CONF="/etc/hostapd_ap.conf"
 DNSMASQ_CONF="/etc/dnsmasq.d/ap-hotspot.rules"
 NAMED_CONF="/etc/bind/named.conf"
@@ -13,7 +17,9 @@ NAMED_ZONE="/etc/bind/catch.all"
 GW_IP=192.168.150.1
 DHCP_RANGE=192.168.150.2,192.168.150.200,12h
 HOSTAPD_LOG="/tmp/hostapd.log"
-DEBUG=1
+
+# Set to 1 if you need debug info
+DEBUG=0
 
 show_info() {
 echo -e "\033[1;34m$@\033[0m"

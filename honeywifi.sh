@@ -1,6 +1,6 @@
 #!/bin/bash
 # author: demontager
-# website: http://nixtalk.com
+
 ################################                              
 #                              #
 #        VER. 1.0 beta         #
